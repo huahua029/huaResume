@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滑振的简历 </title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1047819_r42dq3pyt7o.css">
+    <style>
+        /*css reset*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        /*common css*/
+        
+        .pill {}
+        
+        .layout {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /*page css*/
+        
+        body {
+            font: 16px/1.5 -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
+            ;
+            color: #333;
+            /* margin: 15px; */
+        }
+        
+        .wrapper {
+            background-color: #ececec;
+            /* margin-top: 20px; */
+            /* margin-bottom: 20px; */
+            overflow: auto;
+        }
+        
+        .aside {
+            float: left;
+            width: 280px;
+        }
+        
+        .aside .user {
+            text-align: center;
+            padding: 30px 0 20px 0;
+        }
+        
+        .aside .user h1 {
+            font-size: 40px;
+        }
+        
+        .aside .user h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            border-top: 1px solid #d6d6d6;
+            margin: 18px auto;
+        }
+        
+        .aside .user {
+            margin-top: 10px;
+        }
+        
+        .aside .user::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            margin-top: 20px;
+            border-top: 20px solid grey;
+            border-bottom: 20px solid transparent;
+            border-left: 140px solid transparent;
+            border-right: 140px solid grey;
+        }
+        
+        .aside .contact {
+            padding: 20px;
+        }
+        
+        .aside .contact li {
+            border-bottom: 1px solid #d6d6d6;
+            list-style: none;
+            line-height: 40px;
+        }
+        
+        .aside .contact .iconfont {
+            border-right: 1px solid #d6d6d6;
+            padding-right: 10px;
+            margin-right: 10px;
+            display: inline-block;
+            font-size: 20px;
+            color: #7bbaaa;
+        }
+        
+        .aside .skills {
+            background: #7bbaaa;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .aside .skills dt {
+            color: #eee;
+            margin-top: 20px;
+        }
+        
+        .aside .skills dd {
+            height: 4px;
+            background: #74c5b5;
+            border-radius: 2px;
+            margin-top: 10px;
+        }
+        
+        .aside .skills .mastery {
+            display: block;
+            height: 4px;
+            background: #fff;
+            border-radius: 2px;
+        }
+        
+        .aside .others h2 {
+            margin: 20px 0 0 20px;
+        }
+        
+        .main {
+            margin-left: 280px;
+            background: #fff;
+            padding: 40px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        
+        .main .intro {
+            overflow: auto;
+        }
+        
+        .main .intro img {
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+        
+        .main .intro p {
+            margin-left: 120px;
+        }
+        
+        .main h2 {
+            font-size: 30px;
+            color: #d9d9d9;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .main .education p {
+            font-size: 20px;
+        }
+        
+        .main .work dl {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .main .work dl dt {
+            font-weight: bold;
+        }
+        
+        .main .work dl a {
+            font-weight: bold;
+            margin-right: 20px;
+            color: #7bbaaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper layout">
+        <div class="aside clearfix">
+            <div class="user">
+                <h1>滑振</h1>
+                <p>应聘前端工程师</p>
+            </div>
+            <ul class="contact">
+                <li><span class="iconfont icon-email"></span>1282038751@qq.com</li>
+                <li><span class="iconfont icon-phone"></span>18109243054</li>
+                <li><span class="iconfont icon-xueli"></span>本科</li>
+            </ul>
+            <div class="skills">
+                <h2>我的技能</h2>
+                <dl>
+                    <dt>JavaScript/HTML5/CSS3</dt>
+                    <dd><span class="mastery" style="width: 80%;"></span></dd>
+                    <dt>Vue/Vuex/Vue-router</dt>
+                    <dd><span class="mastery" style="width: 70%;"></span></dd>
+                    <dt>webpack/Parcel/npm</dt>
+                    <dd><span class="mastery" style="width: 50%;"></span></dd>
+                    <dt>ES6/SCSS/Babel</dt>
+                    <dd><span class="mastery" style="width: 60%;"></span></dd>
+                </dl>
+            </div>
+            <div class="others">
+                <h2>其他</h2>
+                <ul class="contact">
+                    <li><span class="iconfont icon-github"></span>
+                        <a href="https://github.com/huahua029">github</a>
+                    </li>
+                    <li><span class="iconfont icon-blog"></span>
+                        <a href="https://www.jianshu.com/u/7aa48a9ad244">博客</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="intro clearfix">
+                <img src="http://wx3.sinaimg.cn/mw690/0060lm7Tly1g0a66q9gmoj30mb0mbmy6.jpg" alt="添加微信">
+                <p>熟悉Vue技术栈，了解模块化、工程化的开发流程，了解webpack配置，可以使用部分ES6/Nodejs</p>
+            </div>
+            <div class="education">
+                <h2>教育经历</h2>
+                <p>西北大学(信息与计算科学)</p>
+            </div>
+            <div class="work">
+                <h2>项目经历</h2>
+                <dl>
+                    <dt>项目名称：Vue技术栈仿cnode社区</dt>
+                    <dt>项目描述：对cnode页面用vue技术栈进行重构</dt>
+                    <dd>１．整个项目分为header/postlist/article等模块，分模块开发</dd>
+                    <dd>２．采用axios获取服务器提供的json数据，按需求对获取的日期、时间进行过滤</dd>
+                    <dd>３．用vue-router进行页面跳转以及展示</dd>
+                    <a href='https://www.jianshu.com/p/92631fb3c8d0'>更多细节</a>
+                    <a href='https://github.com/huahua029/cnodeCode'>项目源码</a>
+                    <a href='https://huahua029.github.io/cnode/#/'>项目预览</a>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>项目名称：在线便利贴</dt>
+                    <dt>项目描述：用nodejs+express+mongodb+mongoose实现一个在线便利贴的后端</dt>
+                    <dd>１．项目支持对数据库的增删改查</dd>
+                    <dd>２．项目对前后端都进行了实践，完成后端接口的封装，前端只需要发送请求获取数据即可</dd>
+                    <dd>３．MVC的实践，对数据库的操作进行封装</dd>
+                    <a href='https://www.jianshu.com/p/4291eea08ca2'>更多细节</a>
+                    <a href='https://github.com/huahua029/vue-stickNote'>前端源码</a>
+                    <a href="https://github.com/huahua029/node-express">后端源码</a>
+                    <a href=''>项目预览</a>
+                </dl>
+                <hr>
+                <dl>
+                    <dt>项目名称：let's share共享博客</dt>
+                    <dt>项目描述：使用vue技术栈，实现一个多人共享博客，支持登录注册编辑等功能</dt>
+                    <dd>1.利用vue-router中的路由守卫，进行合理的路由</dd>
+                    <dd>2.使用vuex进行状态管理，管理登录状态、用户信息以及状态在组件中的分发</dd>
+                    <dd>3.利用axios封装request函数，简化请求的逻辑</dd>
+                    <dd>4.利用vue-router中的路由守卫，进行合理的路由</dd>
+                    <dd>5.预览账号密码：huahua,123456</dd>
+                    <a href='https://www.jianshu.com/p/d70026b73a6f'>更多细节</a>
+                    <a href='https://github.com/huahua029/my-blog'>项目源码</a>
+                    <a href='https://huahua029.github.io/item-share/'>项目预览</a>
+                </dl>
+                <hr>
+            </div>
+            <div class="projects">
+                <h2>个人评价</h2>
+                <p>痴迷新技术，喜欢做有挑战的工作，解决自己不会的问题，喜欢知识总结和分享。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
